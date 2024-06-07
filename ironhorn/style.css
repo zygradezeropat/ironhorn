@@ -1,0 +1,67 @@
+@font-face {
+    src:url(/fonts/Play-Bold.ttf);
+   font-family:Play;
+}
+
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+a {
+    font-size: 20px;
+
+}
+
+
+
+p, h1, h2, h3, h4, h5  {
+    font-family: Play, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #cbe5ff;
+    text-align: center;
+}
+
+body {
+    
+    background-repeat: no-repeat;
+    background: rgb(10, 1, 25);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #cbe5ff;
+    overflow-x: hidden;
+}
+.blur {
+opacity: 70%;
+
+}
+h2.text{
+    color: white; 
+    text-align: left; 
+    margin-left: 20px;
+    
+}
+
+
+
+  
